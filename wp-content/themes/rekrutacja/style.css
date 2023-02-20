@@ -1,0 +1,680 @@
+/* 
+Theme Name: rekrutacja
+
+Author: Artur Cisło
+
+Description: Motyw stworzony od zera
+*/
+@font-face {
+    font-family: Jost;
+    src: url(http://localhost/blue_owl_rekrutacja/wp-content/uploads/2023/02/Jost-VariableFont_wght.ttf);
+  }
+/* menu */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.firstNav {
+    display: flex;
+    align-items: center;
+}
+.secondNav {
+    display: flex;
+    align-items: center;
+}
+span.custom-logo-link {
+    display: flex;
+    align-items: center;
+}
+ul#menu-menu-w-stopce li {
+    margin: 0px;
+}
+.mainHomePage{
+    width:300px;
+    margin: 0 auto;
+  }
+/*   szukajka */
+.searchBox {
+        display: flex;
+    }
+.searchBox > input[type='text'] {
+    width: 232px;
+    height: 30px;
+    border-radius: 25px 0px 0px 25px;
+    background: #fff;
+    outline: none;
+    padding: 0px 10px;
+    border: 1px solid #F3F3F3;
+}
+input#image {
+    background: #0860C4;
+    color: #fff;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+button.secondNav__button {
+    width: 126px;
+    height: 40px;
+    font-size: 15px;
+    background: #0860C4;
+    border-radius: 20px;
+    border: solid #fff;
+    color: #fff;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerInfo__thirdColumn--buttons {
+    display: flex;
+}
+button.secondNav__button a {
+    color: #fff;
+}
+
+/* --------------- zawartosc forntpage ----------------*/
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+.my-slider-progress {
+      background: #ccc;
+    }
+    
+.my-slider-progress-bar {
+      background: greenyellow;
+      height: 2px;
+      transition: width 400ms ease;
+      width: 0;
+    }
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Jost';
+    }
+
+p,h2{
+    margin: 0px;
+  }
+  /* kontener na zdjecia */
+  .header__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  /* siatka zdjec */
+  .header__gallery--image1 { grid-area: 1 / 1 / 2 / 2; position: relative; height: 100%;}
+  .header__gallery--image2 { grid-area: 1 / 2 / 2 / 3; position: relative; height: 100%;}
+  .header__gallery--image3 { grid-area: 1 / 3 / 2 / 4; position: relative; height: 100%;}
+  .header__gallery--image4 { grid-area: 2 / 1 / 3 / 2; position: relative; height: 100%;}
+  .header__gallery--image5 { grid-area: 2 / 2 / 3 / 3; position: relative; height: 100%;}
+  .header__gallery--image6 { grid-area: 2 / 3 / 3 / 4; position: relative; height: 100%;}
+  
+  /* tekst na zdjeciu */
+  .header__gallery--text{
+      position: absolute;
+      font-family: 'Neo Sans Pro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      top: 50%;
+      margin: 0;
+  }
+  /* wielkosc okienka ze zdjeciem */
+  .header__gallery--image1 img,.header__gallery--image2 img,.header__gallery--image3 img,.header__gallery--image4 img,.header__gallery--image5 img,.header__gallery--image6 img {
+      height: 326px;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  /* SEKCJA CTA */
+  .cta {
+      height: 286px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  /* przyciski */
+  .cta__buttons {
+      margin-top: 24px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  a{
+    text-decoration: none;
+  }
+  button.unfilled {
+      padding: 8px 24px;
+      height: 40px;
+      border: 1px solid #FFFFFF;
+      border-radius: 20px;
+      background-color: transparent;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 20px;
+  }
+  button.unfilled a{
+    color: #fff;
+  }
+  button.filled {
+  padding: 8px 24px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  }
+  button.filled a{
+    color: #074D9D;
+  }
+  .cta__title {
+      margin-bottom: 6px;
+      font-size: 36px;
+  }
+  .cta__text {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  /* respo mobile*/
+  @media only screen and (max-width: 1200px) {
+      .header__gallery {
+      display: none;
+  }
+  .opinion__container {
+    display: flex;
+      flex-direction: column-reverse;
+  }
+  h2.opinion__title {
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .opinion__container--info {
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .opinion__container--slider {
+      height: 25rem;
+  }
+  div#opinion {
+      width: 100%;
+  }
+  }
+  
+  /* respo desktop */
+  @media only screen and (min-width: 1199px) {
+      #image {
+      display: none;
+  }
+  .opinion__container--slider {
+      max-height: 610px;
+      width: 70%;
+  }
+  .opinion__container--info {
+      width: 30%;
+      padding: 98px 36px;
+  }
+  .opinion__container {
+      display: flex;
+      margin-top: 20px;
+  }
+  aside.opinion {
+      padding: 126px 108px;
+  }
+  .opinion__title {
+      margin-left: 7%;
+  }
+  }
+
+  /* slider */
+  .header__slider--text{
+    position: absolute;
+      font-family: 'Neo Sans Pro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      top: 50%;
+      margin: 0;
+  }
+  p .splide__slide--text,p.splide__slide--name,p.splide__slide--company {
+      width: 80%;
+      margin: auto;
+  }
+  /* opinie */
+  .opinion__container--slider {
+      max-height: 610px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .opinion__container--info {
+      color: #fff;
+      text-align: center;
+  }
+
+  /* slider */
+  p.splide__slide--company {
+      margin-bottom: 30px;
+  }
+  p.splide__slide--name {
+      margin-top: 24px;
+      font-weight: 600;
+      color: #0860C4;
+  }
+  button.splide__pagination__page.is-active {
+      background-color: #0860C4;
+  }
+  .splide__arrows.splide__arrows--ltr {
+      display: none;
+  }
+  
+    /* slider */
+    header {
+        display: flex;
+    }
+    ul#menu-mainmenu {
+        list-style-type: none;
+        display: flex;
+    }
+    li.menu-item {
+        margin: 0 10px;
+    }
+    nav#manu-glowne-wrapper a {
+        text-decoration: none;
+        color: #000;
+    }
+    nav#manu-glowne-wrapper ul ul {
+        display: none;
+    }
+    nav#manu-glowne-wrapper ul li:hover > ul {
+        display: block;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    nav#manu-glowne-wrapper ul ul {
+        display: none;
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        z-index: 99999;
+        width: 180px;
+            height: 30px;
+        background: #fff;
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    }
+    nav#manu-glowne-wrapper li {
+        position: relative;
+    }
+    
+
+    span.custom-logo-link {
+        display: flex;
+        align-items: center;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+    .firstNav {
+        display: flex;
+        align-items: center;
+    }
+    .secondNav {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* --------------- zawartosc forntp[age ----------------*/
+    .splide__slide img {
+        width: 100%;
+        height: auto;
+      }
+       .my-slider-progress {
+          background: #ccc;
+        }
+        
+        .my-slider-progress-bar {
+          background: greenyellow;
+          height: 2px;
+          transition: width 400ms ease;
+          width: 0;
+        }
+          body{
+              margin: 0;
+              padding: 0px;
+          }
+          p,h2{
+        margin: 0px;
+      }
+      /* kontener na zdjecia */
+      .header__gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+      /* siatka zdjec */
+      .header__gallery--image1 { grid-area: 1 / 1 / 2 / 2; position: relative;}
+      .header__gallery--image2 { grid-area: 1 / 2 / 2 / 3; position: relative;}
+      .header__gallery--image3 { grid-area: 1 / 3 / 2 / 4; position: relative;}
+      .header__gallery--image4 { grid-area: 2 / 1 / 3 / 2; position: relative;}
+      .header__gallery--image5 { grid-area: 2 / 2 / 3 / 3; position: relative;}
+      .header__gallery--image6 { grid-area: 2 / 3 / 3 / 4; position: relative;}
+      
+      /* tekst na zdjeciu */
+      .header__gallery--text{
+          position: absolute;
+          font-family: 'Neo Sans Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          width: 100%;
+          top: 50%;
+          margin: 0;
+      }
+      /* wielkosc okienka ze zdjeciem */
+      .header__gallery--image1 img,.header__gallery--image2 img,.header__gallery--image3 img,.header__gallery--image4 img,.header__gallery--image5 img,.header__gallery--image6 img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+      
+      /* SEKCJA CTA */
+      .cta {
+          height: 286px;
+          color: #fff;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      /* przyciski */
+      .cta__buttons {
+          margin-top: 24px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+      }
+      a{
+        text-decoration: none;
+      }
+      button.unfilled {
+          padding: 8px 24px;
+          height: 40px;
+          border: 1px solid #FFFFFF;
+          border-radius: 20px;
+          background-color: transparent;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          margin: 0 20px;
+      }
+      button.unfilled a{
+        color: #fff;
+      }
+      button.filled {
+      padding: 8px 24px;
+      height: 40px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      border: none;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      }
+      button.filled a{
+        color: #074D9D;
+      }
+      .cta__title {
+          margin-bottom: 6px;
+          font-size: 36px;
+      }
+      .cta__text {
+        font-size: 20px;
+        padding: 0 20px;
+      }
+      /* respo mobile*/
+      @media only screen and (max-width: 1200px) {
+            header {
+        display: contents;
+        margin: 20px;
+    }
+          .header__gallery {
+          display: none;
+      }
+      .opinion__container {
+        display: flex;
+          flex-direction: column-reverse;
+      }
+      h2.opinion__title {
+          /* text-align: center; */
+          height: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .opinion__container--info {
+          height: 20rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .opinion__container--slider {
+          height: 25rem;
+      }
+      div#opinion {
+          width: 100%;
+      }
+            /*footer*/
+            .footerInfo {
+        display: flex;
+        margin: 0 30px!important;
+        flex-direction: column;
+    }
+            .footerInfo__firstColumn, .footerInfo__thirdColumn {
+        width: 100%!important;
+    }
+    .footerInfo__secondColumn {
+        margin: 0px!important;
+    }
+    .footerBottom {
+        margin-top: 30px;
+    }
+      }
+      
+      @media only screen and (min-width: 1199px) {
+          #image {
+          display: none;
+      }
+      .opinion__container--slider {
+          max-height: 610px;
+          width: 70%;
+      }
+      .opinion__container--info {
+          width: 30%;
+          padding: 98px 36px;
+      }
+      .opinion__container {
+          display: flex;
+          margin-top: 20px;
+      }
+      aside.opinion {
+          padding: 126px 108px;
+      }
+      .opinion__title {
+          margin-left: 7%;
+      }
+      }
+      /* slider */
+      .header__slider--text{
+        position: absolute;
+          font-family: 'Neo Sans Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          width: 100%;
+          top: 50%;
+          margin: 0;
+      }
+      span.splide__slide--text p,span.splide__slide--name p,span.splide__slide--company p {
+          width: 80%;
+          margin: auto;
+      }
+      /* opinie */
+      
+      
+      .opinion__container--slider {
+          max-height: 610px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .opinion__container--info {
+          color: #fff;
+          text-align: center;
+      }
+      /* slider */
+      
+      p.splide__slide--company {
+          margin-bottom: 30px;
+      }
+      p.splide__slide--name {
+          margin-top: 24px;
+          font-weight: 600;
+          color: #0860C4;
+      }
+      button.splide__pagination__page.is-active {
+          background-color: #0860C4;
+      }
+      .splide__arrows.splide__arrows--ltr {
+          display: none;
+      }
+      .footerBottom__copyright {
+        margin: 28px;
+    }
+    ul#menu-menu-w-stopce li a {
+        color: #0860C4;
+    }
+
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      
+      .searchTerm {
+        width: 100%;
+        border: 1px solid #F3F3F3;
+        border-radius: 20px;
+        border-right: none;
+        padding: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+      }
+      
+      .searchTerm:focus{
+        color: #00B4CC;
+      }
+      
+      .searchButton {
+       width: 52px;
+      height: 44px;
+        border: 1px solid #0860C4;
+        background: #0860C4;
+        border-radius: 0px 20px 20px 0px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      /*Resize the wrap to see the search bar change!*/
+      .wrap{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    .footerInfo {
+        display: flex;
+        margin: 0 108px;
+    }
+    .footerInfo__firstColumn,.footerInfo__thirdColumn  {
+        width: 33%;
+    }
+    .footerInfo__secondColumn {
+        width: 298px;
+        margin: 0 48px;
+    }
+    ul#menu-menu-w-stopce {
+        list-style-type: none;
+        padding: 0px;
+    }
+    .footerBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepageIcon {
+        background-image: url('http://localhost/blue_owl_rekrutacja/wp-content/uploads/2023/02/png-clipart-computer-icons-button-encapsulated-postscript-down-arrow-angle-rectangle-e1676878185769.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-left: 5px;
+        width: 50px;
+    }
+    
+    
